@@ -1,0 +1,214 @@
+body{
+    background-color: silver;
+    font-family: 'Raleway', sans-serif;
+}
+
+tr:hover{
+    background-color: cornflowerblue;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+
+:root{
+    --background: linear-gradient(135deg,#667eea7e 0%, #764ba298 100%);
+    --color-primary:#667eea;
+    --color-secondary:#764ba2;
+    --boton-padding:20px 40px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px;
+    max-width: 1200px;
+}
+
+.subtitle{
+    color:var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+
+.hero{
+    height: 100%;
+    background-image: var(--background), url('assets/altumcode.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.hero .container{
+    padding: 0;
+}
+
+.nav{
+    display:flex;
+    justify-content: flex-end;
+    height: 70px;
+    align-items: center;
+    font-weight: 700;
+    border: 1px solid #fff;
+}
+
+.nav--footer{
+    font-weight: 300;
+    justify-content: flex-start;
+}
+
+.nav__items{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: inherit;
+}
+
+.nav__items--footer{
+    padding: 10px;
+}
+
+.hero__container{
+    display: flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+    color: #fff;
+}
+.hero__texts{
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.hero__title{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+.hero__wave{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width:100%;
+    height: 100px;
+}
+
+/* Section Sobre mi*/
+.presentation{
+    padding-top: 0;
+    text-align: center;
+}
+
+.presentation__picture{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.presentation__me{
+    width:80%;
+    margin: 0 auto;
+}
+
+/*.about{
+    min-height: 400px;
+    display: grid;
+}*/
+
+/*Hobbies*/
+.hobbies{
+    background: f2f2f2;
+}
+.hobbies__grid{
+    display: grid;
+    height: 550px;
+    grid-template-areas: 
+    "videojuego1 videojuego2 baloncesto"
+    "billar pingpong futbolin";
+    gap: 10px;
+}
+.hobbies__item{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hobbies__img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.hobbies__item:nth-of-type(1){
+   grid-area: videojuego1;
+}
+.hobbies__item:nth-of-type(2){
+    grid-area: videojuego2;
+ }
+ .hobbies__item:nth-of-type(3){
+    grid-area: baloncesto;
+ }
+ .hobbies__item:nth-of-type(4){
+    grid-area: billar;
+ }
+ .hobbies__item:nth-of-type(5){
+    grid-area: pingpong;
+ }
+ .hobbies__item:nth-of-type(6){
+    grid-area: futbolin;
+ }
+
+ /*.hobbies_hover{
+     position:absolute;
+     background: #dc143c8c ;
+     top:0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     color: #fff;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     transform: translate(100%);
+     cursor: pointer;
+     transition:transform .3s ease-in-out;
+ }
+.hobbies__item:hover .hobbies__hover{
+    transform: translate(0%);
+}*/
+ .hobbies__icon{
+     margin-top: 10px;
+     font-size: 30px;
+ }
+
+ /*FOOTER*/
+ .footer{
+     background: var(--color-primary);
+ }
+
+ .footer__grid{
+     display: grid;
+     grid-template-columns: 3fr 2fr;
+     gap: 20px;
+     align-items: center;
+ }
+
+ .footer__title{
+     font-weight: 400;
+     color:#fff;
+     font-size: 2rem;
+     margin-bottom: 30px;
+     text-align: center;
+ }
+
+ .footer__icons{
+     display: flex;
+     justify-content: space-evenly;
+ }
